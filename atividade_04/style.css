@@ -1,0 +1,148 @@
+/* Importando fontes elegantes do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Open+Sans&family=Roboto&display=swap');
+
+/* Reset e base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Estilo do menu */
+header {
+  background-color: white;
+  padding: 20px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  font-family: 'Roboto', sans-serif;
+}
+
+nav ul li a:hover {
+  color: #2a9d8f; /* cor suave, elegante e moderna */
+}
+
+/* Imagem de entrada / background */
+main .entrada {
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main .entrada h1 {
+  color: white;
+  font-size: 48px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px 40px;
+  border-radius: 10px;
+  font-family: 'Playfair Display', serif;
+}
+
+/* Footer elegante */
+footer {
+  background-color: #2a9d8f;
+  color: white;
+  padding: 30px 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 14px;
+  margin-top: 40px;
+}
+
+footer .info {
+  flex: 1;
+  min-width: 250px;
+}
+
+footer .icones {
+  display: flex;
+  gap: 15px;
+  flex: 1;
+  justify-content: flex-end;
+  min-width: 250px;
+}
+
+footer .icones img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease;
+}
+
+footer .icones img:hover {
+  transform: scale(1.1);
+}
+
+/* Estilos específicos para as páginas */
+body.destino1 {
+  background-color: #f1f1f1; /* um tom suave para Paris */
+}
+
+body.destino1 main .entrada {
+  background-image: url('imagens/paris.jpg'); /* substitua pela sua imagem */
+}
+
+body.destino2 {
+  background-color: #e5e5e5; /* algo mais neutro, mas ainda elegante */
+}
+
+body.destino2 main .entrada {
+  background-image: url('imagens/toquio.jpg'); /* substitua pela sua imagem */
+}
+
+body.sobre {
+  background-color: #fafafa; /* fundo bem suave para uma vibe mais leve */
+}
+
+body.sobre main .entrada {
+  background-image: url('imagens/sobre.jpg'); /* imagem representando a ideia de "sobre" */
+}
+
+body.contato {
+  background-color: #f0f0f0; /* uma cor bem neutra, para não sobrecarregar */
+}
+
+body.contato main .entrada {
+  background-image: url('imagens/contato.jpg'); /* imagem para o tema de contato */
+}
+
+/* Responsivo básico */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  footer .icones {
+    justify-content: center;
+    margin-top: 15px;
+  }
+}
